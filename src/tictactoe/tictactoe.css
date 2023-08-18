@@ -1,0 +1,110 @@
+
+
+@font-face {
+  font-family: 'Barbie'; /* Name your font */
+  src: url('../../Barbie.ttf') format('truetype'); 
+
+}
+@font-face {
+  font-family: 'Bartex'; /* Name your font */
+  src: url('../../Bartex.ttf') format('truetype'); 
+
+}
+
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+    font-family: "Bartex";
+    color: #ffffff;
+
+    /* font-weight: bold; */
+    font-size: 30px;
+    background-color: #f5e9ee;
+    text-shadow:
+    3px 3px 3px rgba(0, 0, 0, 0.5);
+    -webkit-text-stroke: 0.1px #E63A8D; 
+
+  
+  }
+
+
+img{
+  position: absolute;
+}
+
+
+
+  table {
+    border-collapse: collapse;
+    width: 300px;
+    height: 300px;
+    margin-left: 150px;
+  }
+
+  td {
+    border: 4px solid #ffffff;
+    width: 33.33%;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    color: #E63A8D;
+
+    box-shadow: 0 4px 20px rgba(230, 58, 141, 0.7); /* Horizontal offset, vertical offset, blur radius, shadow color */
+  }
+
+  td::before {
+    content: "";
+    display: inline-block;
+    padding-top: 100%;
+    width: 1px;
+    vertical-align: middle;
+  }
+
+button {
+  background-color: #ffffff;
+  border: 2px solid #E63A8D;
+  border-radius: 30px;
+  box-shadow: #E63A8D 4px 4px 0 0;
+  color: #E63A8D;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Bartex";
+
+  font-size: 18px;
+  padding: 0 18px;
+  line-height: 30px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-bottom: 40px;
+}
+
+button:hover {
+  background-color: #E63A8D;
+  box-shadow: #fff 4px 4px 0 0;
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+button:active {
+  box-shadow: #E63A8D 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+  button{
+    min-width: 120px;
+    padding: 0 25px;
+  }
+}
+
